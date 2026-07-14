@@ -1,4 +1,4 @@
-import { Pool, QueryResult, QueryResultRow } from "pg"
+import { Pool, QueryResult, QueryResultRow } from "@neondatabase/serverless"
 import { seedDatabase } from "./seed"
 
 const connectionString = process.env.DATABASE_URL || process.env.POSTGRES_URL || "postgresql://postgres:postgres@localhost:5432/billing_db"
