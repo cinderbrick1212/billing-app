@@ -601,7 +601,7 @@ export function InvoiceDetail({ id }: { id: string }) {
           </div>
 
           {/* Particulars Table */}
-          <div className="rounded-lg border bg-card">
+          <div className="overflow-x-auto rounded-lg border bg-card">
             <Table>
               <TableHeader className="bg-muted/30">
                 <TableRow>

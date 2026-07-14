@@ -547,8 +547,8 @@ export function ResourcePage({ type }: { type: Resource }) {
 
             {/* Clients Listing filters: Client dropdown, Date range */}
             {type === "clients" && (
-              <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
-                <div className="w-48">
+              <div className="flex flex-col items-stretch sm:flex-row sm:items-center gap-3 w-full sm:w-auto">
+                <div className="w-full sm:w-48">
                   <Select2
                     options={clientDropdownOptions}
                     value={selectedClientId}
@@ -566,8 +566,8 @@ export function ResourcePage({ type }: { type: Resource }) {
 
             {/* Renewals listing filters: type, timeframe */}
             {type === "renewals" && (
-              <div className="flex items-center gap-3">
-                <div className="w-40">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-3 w-full sm:w-auto">
+                <div className="w-full sm:w-40">
                   <Select2
                     options={renewalTypeOptions}
                     value={renewalType}
@@ -575,7 +575,7 @@ export function ResourcePage({ type }: { type: Resource }) {
                     placeholder="Renewal type"
                   />
                 </div>
-                <div className="w-44">
+                <div className="w-full sm:w-44">
                   <Select2
                     options={timeframeOptions}
                     value={timeframe}
